@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 description = "Content-addressed Merkle data structures with encryption, proofs, and a query language"
 license = "MIT"
-repository = "https://github.com/treehauslabs/cashew"
+repository = "https://github.com/treehauslabs/cashew-rs"
 keywords = ["merkle", "content-addressed", "ipfs", "ipld", "trie"]
 categories = ["data-structures", "cryptography"]
 

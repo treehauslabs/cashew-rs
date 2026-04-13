@@ -1,0 +1,27 @@
+[package]
+name = "cashew"
+version = "0.1.0"
+edition = "2021"
+description = "Content-addressed Merkle data structures with encryption, proofs, and a query language"
+license = "MIT"
+repository = "https://github.com/treehauslabs/cashew"
+keywords = ["merkle", "content-addressed", "ipfs", "ipld", "trie"]
+categories = ["data-structures", "cryptography"]
+
+[dependencies]
+array-trie = { git = "https://github.com/treehauslabs/array-trie.git" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+cid = "0.11"
+multihash-codetable = { version = "0.1", features = ["sha2"] }
+multihash = "0.19"
+sha2 = "0.10"
+aes-gcm = "0.10"
+rand = "0.8"
+base64 = "0.22"
+thiserror = "2"
+async-trait = "0.1"
+tokio = { version = "1", features = ["full"] }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full", "test-util"] }

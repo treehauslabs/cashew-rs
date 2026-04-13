@@ -1,0 +1,25 @@
+pub mod cid_utils;
+pub mod diff;
+pub mod encryption;
+pub mod error;
+pub mod merkle;
+pub mod proof;
+pub mod query;
+pub mod resolver;
+pub mod storage;
+pub mod transform;
+
+pub use diff::{CashewDiff, ModifiedEntry};
+pub use encryption::{EncryptionInfo, EncryptionStrategy, KeyProvider};
+pub use error::{CashewError, Result};
+pub use merkle::array::MerkleArray;
+pub use merkle::dictionary::MerkleDictionary;
+pub use merkle::header::Header;
+pub use merkle::radix_header::RadixHeader;
+pub use merkle::radix_node::RadixNode;
+pub use merkle::set::MerkleSet;
+pub use proof::SparseMerkleProof;
+pub use query::{CashewExpression, CashewParser};
+pub use resolver::ResolutionStrategy;
+pub use storage::{Fetcher, KeyProvidingFetcher, Storer, VolumeAwareFetcher};
+pub use transform::Transform;
